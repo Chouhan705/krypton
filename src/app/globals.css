@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme {
+  --color-krypton-bg: #14170E;
+  --color-krypton-surface: #33451D;
+  --color-krypton-accent: #445B1F;
+  --color-krypton-olive: #758225;
+  --color-krypton-gold: #CDB61A;
+  --color-krypton-gold-muted: #B39315;
+  --color-krypton-brown: #44200F;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
